@@ -1,7 +1,45 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+  <link rel="shortcut icon" href="https://ssl.pstatic.net/sstatic/search/favicon/favicon_140327.ico">
+</head>
+  <script type="text/javascript" src="https://ssl.pstatic.net/sstatic/sdyn.js?f=/au/pc/_nx/jindo_1.5.3_160324.js+/search/js/nhn.Component.js+/search/js/jindo.Component.1.1.0.js+/search/js/jindo.component.library_120927.js+/search/js/flashObject_121025.js+/au/pc/search_option/nhn.search.search_option_160824.js+/au/pc/naver_autocomplete/nhn.common.atcmp.naver_web_161124.js+/au/s/pc/_common/jindo/jindo.Rolling_140526.js+/au/pc/_common/nhn.common_160707.js"></script>
+  <title>네이버 시계</title>
+  <link rel="shortcut icon" href="https://ssl.pstatic.net/sstatic/search/favicon/favicon_140327.ico">
+  </head>
+  <body class="">
+  <link rel="stylesheet" type="text/css" href="http://localhost/naver%20clock/ns.css">
+
+  <div id="_cs_domestic_clock" class="cs_navertime">
+
+    <div class="_loadingLayer  time_bx loading" style="display: none;">
+                <div class="view_time"> <div class="time_sct">
+                  <p class="err_txt ico_ldg">정보를 가져오는 중입니다.</p>
+                </div> </div> </div>
+    <div class="_timeLayer time_bx" style="display: block;">
+                  <div class="view_time"> <div class="time_sct">
+                    <span class="_hour sp_img num1">1</span>
+                    <span class="_hour sp_img num1">1</span>
+                    <span class="_colon sp_img col">:</span>
+                    <span class="_minute sp_img num3">3</span>
+                    <span class="_minute sp_img num8">8</span>
+                    <span class="_colon sp_img col">:</span>
+                    <span class="_second sp_img scd_last num5">5</span>
+                    <span class="_second sp_img scd_last num8">8</span>
+                    <span class="_ampm sp_img bpm">PM</span>
+                  </div> </div> </div>
+                  <div class="bx_alrt_txt">
+
+  <input type="checkbox" id="ckbox_alrt" class="_alarm inp_chkbx">
+  <ul class="_list"> <class="_li on"><a nocr="1" class="_playBtn sound_a">
+
+
+  </div></div>
+  <script type="text/javascript" src="https://ssl.pstatic.net/sstatic/au/s/pc/_search/clock/nhn.search.clock.domestic_150216_02.js" charset="utf-8"></script>
+  <script type="text/javascript"> (function(){ var oDomesticClock = new nhn.search.clock.domestic.Controller($("_cs_domestic_clock"), { htApi : { sUrl : 'https://m.search.naver.com/p/csearch/dcontent/util/time.nhn', htParam : { _format : "yyyy/MM/dd/HH/mm/ss/SSS" } }, }).attach({ "play" : function(oEvent)
+                          { nhn.common.audio_player.play(oEvent.url); }, "stop" : function(){ nhn.common.audio_player.stop(); } }); })(); /* 뒤로가기 이슈 대응 */ jindo.$Fn(function()
+                          { nhn.common.audio_player; }, this).attach(window,"pageshow"); </script>
+  </body>
+
 </html>
